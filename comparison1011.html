@@ -1,0 +1,2214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+	
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.6  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20131023;1132400">
+	
+	<STYLE>
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"Liberation Sans"; font-size:x-small }
+		 -->
+	</STYLE>
+	
+</HEAD>
+
+<BODY TEXT="#000000">
+<TABLE CELLSPACING="0" COLS="5" BORDER="0">
+	<COLGROUP WIDTH="242"></COLGROUP>
+	<COLGROUP WIDTH="264"></COLGROUP>
+	<COLGROUP SPAN="2" WIDTH="152"></COLGROUP>
+	<COLGROUP WIDTH="85"></COLGROUP>
+	<TR>
+		<TD HEIGHT="16" ALIGN="LEFT">Reference</TD>
+		<TD ALIGN="LEFT">Name</TD>
+		<TD ALIGN="LEFT">% faster than reference</TD>
+		<TD ALIGN="LEFT">% faster than reference</TD>
+		<TD ALIGN="LEFT"><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">empty/strict/vector</TD>
+		<TD ALIGN="LEFT">empty/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">empty/lazy/vector</TD>
+		<TD ALIGN="LEFT">empty/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">singleton/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">singleton/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="85" SDNUM="1033;">85</TD>
+		<TD ALIGN="RIGHT" SDVAL="87" SDNUM="1033;">87</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">singleton/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">singleton/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-48" SDNUM="1033;">-48</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-46" SDNUM="1033;">-46</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">singleton/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">singleton/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">singleton/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">singleton/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">pack/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">pack/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-60" SDNUM="1033;">-60</TD>
+		<TD ALIGN="RIGHT" SDVAL="-55" SDNUM="1033;">-55</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">pack/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">pack/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-12" SDNUM="1033;">-12</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">pack/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">pack/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-16" SDNUM="1033;">-16</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="10" SDNUM="1033;">10</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="26" SDNUM="1033;">26</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">pack/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">pack/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="78" SDNUM="1033;">78</TD>
+		<TD ALIGN="RIGHT" SDVAL="78" SDNUM="1033;">78</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">unpack/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" SDVAL="59" SDNUM="1033;">59</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">unpack/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="43" SDNUM="1033;">43</TD>
+		<TD ALIGN="RIGHT" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" SDVAL="15" SDNUM="1033;">15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">unpack/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">unpack/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="45" SDNUM="1033;">45</TD>
+		<TD ALIGN="RIGHT" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" SDVAL="10" SDNUM="1033;">10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack_list_fuse/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">unpack_list_fuse/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack_list_fuse/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">unpack_list_fuse/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-705" SDNUM="1033;">-705</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-675" SDNUM="1033;">-675</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="30" SDNUM="1033;">30</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack_list_fuse/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">unpack_list_fuse/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unpack_list_fuse/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">unpack_list_fuse/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="20" SDNUM="1033;">20</TD>
+		<TD ALIGN="RIGHT" SDVAL="19" SDNUM="1033;">19</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">cons/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">cons/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="10" SDNUM="1033;">10</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-90" SDNUM="1033;">-90</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">cons/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">cons/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="6" SDNUM="1033;">6</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-94" SDNUM="1033;">-94</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">cons/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">cons/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">cons/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">cons/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">snoc/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">snoc/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="4" SDNUM="1033;">4</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-96" SDNUM="1033;">-96</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">snoc/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">snoc/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="93" SDNUM="1033;">93</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-92" SDNUM="1033;">-92</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">snoc/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">snoc/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">snoc/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">snoc/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">append/strict/vector</TD>
+		<TD ALIGN="LEFT">append/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="7" SDNUM="1033;">7</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-93" SDNUM="1033;">-93</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">append/lazy/vector</TD>
+		<TD ALIGN="LEFT">append/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">head/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">head/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="71" SDNUM="1033;">71</TD>
+		<TD ALIGN="RIGHT" SDVAL="73" SDNUM="1033;">73</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">head/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">head/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="41" SDNUM="1033;">41</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="42" SDNUM="1033;">42</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">head/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">head/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">head/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">head/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">uncons/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">uncons/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="62" SDNUM="1033;">62</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">uncons/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">uncons/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="60" SDNUM="1033;">60</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">uncons/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">uncons/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="43" SDNUM="1033;">43</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="44" SDNUM="1033;">44</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">uncons/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">uncons/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="42" SDNUM="1033;">42</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="43" SDNUM="1033;">43</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">last/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">last/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="79" SDNUM="1033;">79</TD>
+		<TD ALIGN="RIGHT" SDVAL="81" SDNUM="1033;">81</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">last/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">last/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-14" SDNUM="1033;">-14</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="40" SDNUM="1033;">40</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="54" SDNUM="1033;">54</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">last/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">last/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-78" SDNUM="1033;">-78</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-25" SDNUM="1033;">-25</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="53" SDNUM="1033;">53</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">last/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">last/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-69" SDNUM="1033;">-69</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-25" SDNUM="1033;">-25</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="44" SDNUM="1033;">44</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">tail/strict/vector</TD>
+		<TD ALIGN="LEFT">tail/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="73" SDNUM="1033;">73</TD>
+		<TD ALIGN="RIGHT" SDVAL="75" SDNUM="1033;">75</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">tail/lazy/vector</TD>
+		<TD ALIGN="LEFT">tail/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="49" SDNUM="1033;">49</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="50" SDNUM="1033;">50</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">init/strict/vector</TD>
+		<TD ALIGN="LEFT">init/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="72" SDNUM="1033;">72</TD>
+		<TD ALIGN="RIGHT" SDVAL="75" SDNUM="1033;">75</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">init/lazy/vector</TD>
+		<TD ALIGN="LEFT">init/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-10" SDNUM="1033;">-10</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="16" SDNUM="1033;">16</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="26" SDNUM="1033;">26</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">null/strict/vector</TD>
+		<TD ALIGN="LEFT">null/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="37" SDNUM="1033;">37</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-34" SDNUM="1033;">-34</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">null/lazy/vector</TD>
+		<TD ALIGN="LEFT">null/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">length/strict/vector</TD>
+		<TD ALIGN="LEFT">length/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="31" SDNUM="1033;">31</TD>
+		<TD ALIGN="RIGHT" SDVAL="36" SDNUM="1033;">36</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">length/lazy/vector</TD>
+		<TD ALIGN="LEFT">length/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="11" SDNUM="1033;">11</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="78" SDNUM="1033;">78</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="67" SDNUM="1033;">67</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">map/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">map/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-440" SDNUM="1033;">-440</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-362" SDNUM="1033;">-362</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="78" SDNUM="1033;">78</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">map/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">map/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-466" SDNUM="1033;">-466</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-390" SDNUM="1033;">-390</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="76" SDNUM="1033;">76</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">map/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">map/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="52" SDNUM="1033;">52</TD>
+		<TD ALIGN="RIGHT" SDVAL="51" SDNUM="1033;">51</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">map/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">map/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="44" SDNUM="1033;">44</TD>
+		<TD ALIGN="RIGHT" SDVAL="49" SDNUM="1033;">49</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">reverse/strict/vector</TD>
+		<TD ALIGN="LEFT">reverse/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="49" SDNUM="1033;">49</TD>
+		<TD ALIGN="RIGHT" SDVAL="48" SDNUM="1033;">48</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">reverse/lazy/vector</TD>
+		<TD ALIGN="LEFT">reverse/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="48" SDNUM="1033;">48</TD>
+		<TD ALIGN="RIGHT" SDVAL="49" SDNUM="1033;">49</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">intersperse/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">intersperse/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-12" SDNUM="1033;">-12</TD>
+		<TD ALIGN="RIGHT" SDVAL="-11" SDNUM="1033;">-11</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">intersperse/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">intersperse/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-14" SDNUM="1033;">-14</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" SDVAL="10" SDNUM="1033;">10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">intersperse/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">intersperse/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">intersperse/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">intersperse/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">intercalate/strict/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">intercalate/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="80" SDNUM="1033;">80</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-84" SDNUM="1033;">-84</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">intercalate/lazy/vector</TD>
+		<TD ALIGN="LEFT">intercalate/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">intercalate_singleton/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">intercalate_singleton/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="79" SDNUM="1033;">79</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-76" SDNUM="1033;">-76</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">transpose/strict/vector</TD>
+		<TD ALIGN="LEFT">transpose/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="41" SDNUM="1033;">41</TD>
+		<TD ALIGN="RIGHT" SDVAL="33" SDNUM="1033;">33</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">transpose/lazy/vector</TD>
+		<TD ALIGN="LEFT">transpose/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="25" SDNUM="1033;">25</TD>
+		<TD ALIGN="RIGHT" SDVAL="22" SDNUM="1033;">22</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1377" SDNUM="1033;">-1377</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1381" SDNUM="1033;">-1381</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1551" SDNUM="1033;">-1551</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1551" SDNUM="1033;">-1551</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-40" SDNUM="1033;">-40</TD>
+		<TD ALIGN="RIGHT" SDVAL="-35" SDNUM="1033;">-35</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-44" SDNUM="1033;">-44</TD>
+		<TD ALIGN="RIGHT" SDVAL="-50" SDNUM="1033;">-50</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl_strict/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl_strict/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1659" SDNUM="1033;">-1659</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1600" SDNUM="1033;">-1600</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="59" SDNUM="1033;">59</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl_strict/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl_strict/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1505" SDNUM="1033;">-1505</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1552" SDNUM="1033;">-1552</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-47" SDNUM="1033;">-47</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl_strict/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl_strict/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="99" SDNUM="1033;">99</TD>
+		<TD ALIGN="RIGHT" SDVAL="99" SDNUM="1033;">99</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl_strict/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl_strict/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="99" SDNUM="1033;">99</TD>
+		<TD ALIGN="RIGHT" SDVAL="99" SDNUM="1033;">99</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl1/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="93" SDNUM="1033;">93</TD>
+		<TD ALIGN="RIGHT" SDVAL="93" SDNUM="1033;">93</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl1/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl1/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl1/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="93" SDNUM="1033;">93</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1_strict/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl1_strict/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1400" SDNUM="1033;">-1400</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1439" SDNUM="1033;">-1439</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-39" SDNUM="1033;">-39</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1_strict/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl1_strict/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="38" SDNUM="1033;">38</TD>
+		<TD ALIGN="RIGHT" SDVAL="38" SDNUM="1033;">38</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1_strict/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldl1_strict/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="93" SDNUM="1033;">93</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldl1_strict/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldl1_strict/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-399" SDNUM="1033;">-399</TD>
+		<TD ALIGN="RIGHT" SDVAL="-407" SDNUM="1033;">-407</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1160" SDNUM="1033;">-1160</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1109" SDNUM="1033;">-1109</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="51" SDNUM="1033;">51</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-72" SDNUM="1033;">-72</TD>
+		<TD ALIGN="RIGHT" SDVAL="-78" SDNUM="1033;">-78</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-225" SDNUM="1033;">-225</TD>
+		<TD ALIGN="RIGHT" SDVAL="-240" SDNUM="1033;">-240</TD>
+		<TD ALIGN="RIGHT" SDVAL="-15" SDNUM="1033;">-15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr_strict/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr_strict/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1495" SDNUM="1033;">-1495</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1470" SDNUM="1033;">-1470</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="25" SDNUM="1033;">25</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr_strict/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr_strict/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1029" SDNUM="1033;">-1029</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1037" SDNUM="1033;">-1037</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr1/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr1/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr1/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr1/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1_strict/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">foldr1_strict/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1201" SDNUM="1033;">-1201</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1266" SDNUM="1033;">-1266</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-65" SDNUM="1033;">-65</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">foldr1_strict/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">foldr1_strict/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="37" SDNUM="1033;">37</TD>
+		<TD ALIGN="RIGHT" SDVAL="33" SDNUM="1033;">33</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">concat/strict/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">concat/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-98" SDNUM="1033;">-98</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">concat/lazy/vector</TD>
+		<TD ALIGN="LEFT">concat/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">concatMap/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">concatMap/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-516" SDNUM="1033;">-516</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-938" SDNUM="1033;">-938</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-422" SDNUM="1033;">-422</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">concatMap/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">concatMap/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-588" SDNUM="1033;">-588</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-1048" SDNUM="1033;">-1048</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-460" SDNUM="1033;">-460</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">concatMap/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">concatMap/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+		<TD ALIGN="RIGHT" SDVAL="27" SDNUM="1033;">27</TD>
+		<TD ALIGN="RIGHT" SDVAL="23" SDNUM="1033;">23</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">concatMap/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">concatMap/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="8" SDNUM="1033;">8</TD>
+		<TD ALIGN="RIGHT" SDVAL="23" SDNUM="1033;">23</TD>
+		<TD ALIGN="RIGHT" SDVAL="15" SDNUM="1033;">15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">any/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">any/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-425" SDNUM="1033;">-425</TD>
+		<TD ALIGN="RIGHT" SDVAL="-413" SDNUM="1033;">-413</TD>
+		<TD ALIGN="RIGHT" SDVAL="12" SDNUM="1033;">12</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">any/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">any/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-588" SDNUM="1033;">-588</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-429" SDNUM="1033;">-429</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="159" SDNUM="1033;">159</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">any/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">any/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="54" SDNUM="1033;">54</TD>
+		<TD ALIGN="RIGHT" SDVAL="51" SDNUM="1033;">51</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">any/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">any/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" SDVAL="53" SDNUM="1033;">53</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">all/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">all/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-596" SDNUM="1033;">-596</TD>
+		<TD ALIGN="RIGHT" SDVAL="-587" SDNUM="1033;">-587</TD>
+		<TD ALIGN="RIGHT" SDVAL="9" SDNUM="1033;">9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">all/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">all/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-644" SDNUM="1033;">-644</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-617" SDNUM="1033;">-617</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="27" SDNUM="1033;">27</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">all/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">all/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="35" SDNUM="1033;">35</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="20" SDNUM="1033;">20</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">all/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">all/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="37" SDNUM="1033;">37</TD>
+		<TD ALIGN="RIGHT" SDVAL="54" SDNUM="1033;">54</TD>
+		<TD ALIGN="RIGHT" SDVAL="17" SDNUM="1033;">17</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">maximum/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">maximum/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">maximum/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">maximum/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">maximum/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">maximum/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">maximum/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">maximum/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="9" SDNUM="1033;">9</TD>
+		<TD ALIGN="RIGHT" SDVAL="8" SDNUM="1033;">8</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">minimum/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">minimum/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-31" SDNUM="1033;">-31</TD>
+		<TD ALIGN="RIGHT" SDVAL="-33" SDNUM="1033;">-33</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">minimum/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">minimum/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-30" SDNUM="1033;">-30</TD>
+		<TD ALIGN="RIGHT" SDVAL="-32" SDNUM="1033;">-32</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">minimum/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">minimum/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-31" SDNUM="1033;">-31</TD>
+		<TD ALIGN="RIGHT" SDVAL="-29" SDNUM="1033;">-29</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">minimum/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">minimum/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-32" SDNUM="1033;">-32</TD>
+		<TD ALIGN="RIGHT" SDVAL="-37" SDNUM="1033;">-37</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">scanl/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-525" SDNUM="1033;">-525</TD>
+		<TD ALIGN="RIGHT" SDVAL="-516" SDNUM="1033;">-516</TD>
+		<TD ALIGN="RIGHT" SDVAL="9" SDNUM="1033;">9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">scanl/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-446" SDNUM="1033;">-446</TD>
+		<TD ALIGN="RIGHT" SDVAL="-439" SDNUM="1033;">-439</TD>
+		<TD ALIGN="RIGHT" SDVAL="7" SDNUM="1033;">7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">scanl/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">scanl/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl1/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">scanl1/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-612" SDNUM="1033;">-612</TD>
+		<TD ALIGN="RIGHT" SDVAL="-600" SDNUM="1033;">-600</TD>
+		<TD ALIGN="RIGHT" SDVAL="12" SDNUM="1033;">12</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanl1/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">scanl1/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-602" SDNUM="1033;">-602</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-658" SDNUM="1033;">-658</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-56" SDNUM="1033;">-56</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanr/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">scanr/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-539" SDNUM="1033;">-539</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-612" SDNUM="1033;">-612</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-73" SDNUM="1033;">-73</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanr/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">scanr/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-482" SDNUM="1033;">-482</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-556" SDNUM="1033;">-556</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-74" SDNUM="1033;">-74</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanr1/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">scanr1/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-595" SDNUM="1033;">-595</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-506" SDNUM="1033;">-506</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="89" SDNUM="1033;">89</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">scanr1/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">scanr1/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-373" SDNUM="1033;">-373</TD>
+		<TD ALIGN="RIGHT" SDVAL="-533" SDNUM="1033;">-533</TD>
+		<TD ALIGN="RIGHT" SDVAL="-160" SDNUM="1033;">-160</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumL/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumL/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumL/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumL/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="10" SDNUM="1033;">10</TD>
+		<TD ALIGN="RIGHT" SDVAL="7" SDNUM="1033;">7</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumL/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumL/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumL/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumL/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumR/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumR/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumR/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumR/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="11" SDNUM="1033;">11</TD>
+		<TD ALIGN="RIGHT" SDVAL="8" SDNUM="1033;">8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumR/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumR/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">mapAccumR/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">mapAccumR/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" SDVAL="-10" SDNUM="1033;">-10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="100" SDNUM="1033;">100</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-97" SDNUM="1033;">-97</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="94" SDNUM="1033;">94</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-94" SDNUM="1033;">-94</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="56" SDNUM="1033;">56</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-10" SDNUM="1033;">-10</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-66" SDNUM="1033;">-66</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT" BGCOLOR="#FFFF00">replicate/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-11" SDNUM="1033;">-11</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-66" SDNUM="1033;">-66</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldr/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">unfoldr/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="50" SDNUM="1033;">50</TD>
+		<TD ALIGN="RIGHT" SDVAL="35" SDNUM="1033;">35</TD>
+		<TD ALIGN="RIGHT" SDVAL="-15" SDNUM="1033;">-15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldr/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">unfoldr/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldr/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">unfoldr/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldr/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">unfoldr/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldrN/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">unfoldrN/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unfoldrN/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">unfoldrN/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">take/strict/vector</TD>
+		<TD ALIGN="LEFT">take/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="60" SDNUM="1033;">60</TD>
+		<TD ALIGN="RIGHT" SDVAL="61" SDNUM="1033;">61</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">take/lazy/vector</TD>
+		<TD ALIGN="LEFT">take/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="77" SDNUM="1033;">77</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="77" SDNUM="1033;">77</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">drop/strict/vector</TD>
+		<TD ALIGN="LEFT">drop/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="71" SDNUM="1033;">71</TD>
+		<TD ALIGN="RIGHT" SDVAL="74" SDNUM="1033;">74</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">drop/lazy/vector</TD>
+		<TD ALIGN="LEFT">drop/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="61" SDNUM="1033;">61</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="56" SDNUM="1033;">56</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitAt/strict/vector</TD>
+		<TD ALIGN="LEFT">splitAt/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="80" SDNUM="1033;">80</TD>
+		<TD ALIGN="RIGHT" SDVAL="83" SDNUM="1033;">83</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitAt/lazy/vector</TD>
+		<TD ALIGN="LEFT">splitAt/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="54" SDNUM="1033;">54</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="53" SDNUM="1033;">53</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">takeWhile/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">takeWhile/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">takeWhile/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">takeWhile/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-468" SDNUM="1033;">-468</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-425" SDNUM="1033;">-425</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="43" SDNUM="1033;">43</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">takeWhile/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">takeWhile/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">takeWhile/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">takeWhile/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">dropWhile/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">dropWhile/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">dropWhile/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">dropWhile/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-480" SDNUM="1033;">-480</TD>
+		<TD ALIGN="RIGHT" SDVAL="-464" SDNUM="1033;">-464</TD>
+		<TD ALIGN="RIGHT" SDVAL="16" SDNUM="1033;">16</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">dropWhile/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">dropWhile/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">dropWhile/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">dropWhile/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-34" SDNUM="1033;">-34</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-30" SDNUM="1033;">-30</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">span/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="82" SDNUM="1033;">82</TD>
+		<TD ALIGN="RIGHT" SDVAL="85" SDNUM="1033;">85</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">span/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="82" SDNUM="1033;">82</TD>
+		<TD ALIGN="RIGHT" SDVAL="85" SDNUM="1033;">85</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">span/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">span/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span_eq/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">span_eq/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="87" SDNUM="1033;">87</TD>
+		<TD ALIGN="RIGHT" SDVAL="86" SDNUM="1033;">86</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span_eq/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">span_eq/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="82" SDNUM="1033;">82</TD>
+		<TD ALIGN="RIGHT" SDVAL="86" SDNUM="1033;">86</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span_eq/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">span_eq/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">span_eq/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">span_eq/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="11" SDNUM="1033;">11</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-10" SDNUM="1033;">-10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">spanEnd/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">spanEnd/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-16" SDNUM="1033;">-16</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="74" SDNUM="1033;">74</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="90" SDNUM="1033;">90</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">spanEnd/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">spanEnd/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-24" SDNUM="1033;">-24</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="74" SDNUM="1033;">74</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="98" SDNUM="1033;">98</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">break/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="27" SDNUM="1033;">27</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#23FF23" SDVAL="-24" SDNUM="1033;">-24</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">break/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="87" SDNUM="1033;">87</TD>
+		<TD ALIGN="RIGHT" SDVAL="85" SDNUM="1033;">85</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">break/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">break/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break_eq/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">break_eq/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break_eq/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">break_eq/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="87" SDNUM="1033;">87</TD>
+		<TD ALIGN="RIGHT" SDVAL="86" SDNUM="1033;">86</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break_eq/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">break_eq/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">break_eq/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">break_eq/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">breakEnd/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">breakEnd/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-24" SDNUM="1033;">-24</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="73" SDNUM="1033;">73</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="97" SDNUM="1033;">97</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">breakEnd/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">breakEnd/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-30" SDNUM="1033;">-30</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="73" SDNUM="1033;">73</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="103" SDNUM="1033;">103</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">group/strict/vector</TD>
+		<TD ALIGN="LEFT">group/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-13" SDNUM="1033;">-13</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="27" SDNUM="1033;">27</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="40" SDNUM="1033;">40</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">group/lazy/vector</TD>
+		<TD ALIGN="LEFT">group/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="51" SDNUM="1033;">51</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="52" SDNUM="1033;">52</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">groupBy/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">groupBy/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">groupBy/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">groupBy/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">groupBy/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">groupBy/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+		<TD ALIGN="RIGHT" SDVAL="9" SDNUM="1033;">9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">groupBy/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">groupBy/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">inits/strict/vector</TD>
+		<TD ALIGN="LEFT">inits/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="22" SDNUM="1033;">22</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="27" SDNUM="1033;">27</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">inits/lazy/vector</TD>
+		<TD ALIGN="LEFT">inits/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">tails/strict/vector</TD>
+		<TD ALIGN="LEFT">tails/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="48" SDNUM="1033;">48</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="49" SDNUM="1033;">49</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">tails/lazy/vector</TD>
+		<TD ALIGN="LEFT">tails/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="62" SDNUM="1033;">62</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="66" SDNUM="1033;">66</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">split/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">split/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">split/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">split/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-8" SDNUM="1033;">-8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">split/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">split/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="22" SDNUM="1033;">22</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="27" SDNUM="1033;">27</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">split/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">split/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="19" SDNUM="1033;">19</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="25" SDNUM="1033;">25</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">splitWith/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-13" SDNUM="1033;">-13</TD>
+		<TD ALIGN="RIGHT" SDVAL="-12" SDNUM="1033;">-12</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">splitWith/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-14" SDNUM="1033;">-14</TD>
+		<TD ALIGN="RIGHT" SDVAL="-12" SDNUM="1033;">-12</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">splitWith/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="21" SDNUM="1033;">21</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="19" SDNUM="1033;">19</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">splitWith/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+		<TD ALIGN="RIGHT" SDVAL="18" SDNUM="1033;">18</TD>
+		<TD ALIGN="RIGHT" SDVAL="14" SDNUM="1033;">14</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith_eq/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">splitWith_eq/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-28" SDNUM="1033;">-28</TD>
+		<TD ALIGN="RIGHT" SDVAL="-30" SDNUM="1033;">-30</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith_eq/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">splitWith_eq/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-19" SDNUM="1033;">-19</TD>
+		<TD ALIGN="RIGHT" SDVAL="-29" SDNUM="1033;">-29</TD>
+		<TD ALIGN="RIGHT" SDVAL="-10" SDNUM="1033;">-10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith_eq/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">splitWith_eq/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+		<TD ALIGN="RIGHT" SDVAL="8" SDNUM="1033;">8</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">splitWith_eq/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">splitWith_eq/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="10" SDNUM="1033;">10</TD>
+		<TD ALIGN="RIGHT" SDVAL="8" SDNUM="1033;">8</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">isPrefixOf/strict/vector</TD>
+		<TD ALIGN="LEFT">isPrefixOf/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">isPrefixOf/lazy/vector</TD>
+		<TD ALIGN="LEFT">isPrefixOf/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="29" SDNUM="1033;">29</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="84" SDNUM="1033;">84</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="55" SDNUM="1033;">55</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">isSuffixOf/vector</TD>
+		<TD ALIGN="LEFT">isSuffixOf/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">isInfixOf/vector</TD>
+		<TD ALIGN="LEFT">isInfixOf/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="76" SDNUM="1033;">76</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="81" SDNUM="1033;">81</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">breakSubstring/vector</TD>
+		<TD ALIGN="LEFT">breakSubstring/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="7" SDNUM="1033;">7</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="61" SDNUM="1033;">61</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="54" SDNUM="1033;">54</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findSubstring/vector</TD>
+		<TD ALIGN="LEFT">findSubstring/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="76" SDNUM="1033;">76</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="79" SDNUM="1033;">79</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findSubstrings/vector</TD>
+		<TD ALIGN="LEFT">findSubstrings/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="8" SDNUM="1033;">8</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="67" SDNUM="1033;">67</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="59" SDNUM="1033;">59</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elem/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">elem/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elem/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">elem/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elem/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">elem/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elem/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">elem/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="98" SDNUM="1033;">98</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">notElem/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">notElem/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">notElem/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">notElem/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="96" SDNUM="1033;">96</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">notElem/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">notElem/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">notElem/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">notElem/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">find/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">find/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-455" SDNUM="1033;">-455</TD>
+		<TD ALIGN="RIGHT" SDVAL="-459" SDNUM="1033;">-459</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">find/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">find/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="71" SDNUM="1033;">71</TD>
+		<TD ALIGN="RIGHT" SDVAL="70" SDNUM="1033;">70</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">find/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">find/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" SDVAL="57" SDNUM="1033;">57</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">find/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">find/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="69" SDNUM="1033;">69</TD>
+		<TD ALIGN="RIGHT" SDVAL="69" SDNUM="1033;">69</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">filter/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">filter/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-30" SDNUM="1033;">-30</TD>
+		<TD ALIGN="RIGHT" SDVAL="-29" SDNUM="1033;">-29</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">filter/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">filter/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-22" SDNUM="1033;">-22</TD>
+		<TD ALIGN="RIGHT" SDVAL="-29" SDNUM="1033;">-29</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">filter/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">filter/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="17" SDNUM="1033;">17</TD>
+		<TD ALIGN="RIGHT" SDVAL="15" SDNUM="1033;">15</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">filter/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">filter/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="17" SDNUM="1033;">17</TD>
+		<TD ALIGN="RIGHT" SDVAL="17" SDNUM="1033;">17</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">partition/strict/vector</TD>
+		<TD ALIGN="LEFT">partition/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-152" SDNUM="1033;">-152</TD>
+		<TD ALIGN="RIGHT" SDVAL="-155" SDNUM="1033;">-155</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">partition/lazy/vector</TD>
+		<TD ALIGN="LEFT">partition/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="18" SDNUM="1033;">18</TD>
+		<TD ALIGN="RIGHT" SDVAL="17" SDNUM="1033;">17</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">index/strict/vector</TD>
+		<TD ALIGN="LEFT">index/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="69" SDNUM="1033;">69</TD>
+		<TD ALIGN="RIGHT" SDVAL="71" SDNUM="1033;">71</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">index/lazy/vector</TD>
+		<TD ALIGN="LEFT">index/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="86" SDNUM="1033;">86</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="87" SDNUM="1033;">87</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndex/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">elemIndex/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndex/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">elemIndex/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="98" SDNUM="1033;">98</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndex/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">elemIndex/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndex/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">elemIndex/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="97" SDNUM="1033;">97</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndices/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">elemIndices/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="26" SDNUM="1033;">26</TD>
+		<TD ALIGN="RIGHT" SDVAL="27" SDNUM="1033;">27</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndices/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">elemIndices/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="26" SDNUM="1033;">26</TD>
+		<TD ALIGN="RIGHT" SDVAL="22" SDNUM="1033;">22</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndices/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">elemIndices/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-14" SDNUM="1033;">-14</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="12" SDNUM="1033;">12</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndices/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">elemIndices/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-15" SDNUM="1033;">-15</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="14" SDNUM="1033;">14</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndexEnd/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">elemIndexEnd/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">elemIndexEnd/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">elemIndexEnd/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndex/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">findIndex/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-318" SDNUM="1033;">-318</TD>
+		<TD ALIGN="RIGHT" SDVAL="-314" SDNUM="1033;">-314</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndex/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">findIndex/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-295" SDNUM="1033;">-295</TD>
+		<TD ALIGN="RIGHT" SDVAL="-310" SDNUM="1033;">-310</TD>
+		<TD ALIGN="RIGHT" SDVAL="-15" SDNUM="1033;">-15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndex/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">findIndex/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" SDVAL="53" SDNUM="1033;">53</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndex/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">findIndex/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="55" SDNUM="1033;">55</TD>
+		<TD ALIGN="RIGHT" SDVAL="51" SDNUM="1033;">51</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndices/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">findIndices/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndices/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">findIndices/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndices/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">findIndices/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">findIndices/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">findIndices/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">count/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">count/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">count/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">count/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">count/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">count/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">count/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">count/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zip/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">zip/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-8" SDNUM="1033;">-8</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="66" SDNUM="1033;">66</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zip/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">zip/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-7" SDNUM="1033;">-7</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="58" SDNUM="1033;">58</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="65" SDNUM="1033;">65</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zip/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">zip/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-37" SDNUM="1033;">-37</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="46" SDNUM="1033;">46</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="83" SDNUM="1033;">83</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zip/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">zip/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-12" SDNUM="1033;">-12</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="62" SDNUM="1033;">62</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="74" SDNUM="1033;">74</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">zipWith/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-87" SDNUM="1033;">-87</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="42" SDNUM="1033;">42</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="129" SDNUM="1033;">129</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">zipWith/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-269" SDNUM="1033;">-269</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="264" SDNUM="1033;">264</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">zipWith/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-35" SDNUM="1033;">-35</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="42" SDNUM="1033;">42</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="77" SDNUM="1033;">77</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">zipWith/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-34" SDNUM="1033;">-34</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="40" SDNUM="1033;">40</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="74" SDNUM="1033;">74</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith_Word8/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">zipWith_Word8/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-95" SDNUM="1033;">-95</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="41" SDNUM="1033;">41</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="136" SDNUM="1033;">136</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith_Word8/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">zipWith_Word8/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-265" SDNUM="1033;">-265</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-10" SDNUM="1033;">-10</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="255" SDNUM="1033;">255</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith_Word8/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">zipWith_Word8/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-35" SDNUM="1033;">-35</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="41" SDNUM="1033;">41</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="76" SDNUM="1033;">76</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">zipWith_Word8/lazy/Char8/vector</TD>
+		<TD ALIGN="LEFT">zipWith_Word8/lazy/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-32" SDNUM="1033;">-32</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="40" SDNUM="1033;">40</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="72" SDNUM="1033;">72</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unzip/strict/Word8/vector</TD>
+		<TD ALIGN="LEFT">unzip/strict/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-193" SDNUM="1033;">-193</TD>
+		<TD ALIGN="RIGHT" SDVAL="-203" SDNUM="1033;">-203</TD>
+		<TD ALIGN="RIGHT" SDVAL="-10" SDNUM="1033;">-10</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unzip/strict/Char8/vector</TD>
+		<TD ALIGN="LEFT">unzip/strict/Char8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unzip/lazy/Word8/vector</TD>
+		<TD ALIGN="LEFT">unzip/lazy/Word8/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-10" SDNUM="1033;">-10</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">sort/vector</TD>
+		<TD ALIGN="LEFT">sort/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">copy/strict/vector</TD>
+		<TD ALIGN="LEFT">copy/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">copy/lazy/vector</TD>
+		<TD ALIGN="LEFT">copy/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">packCString/vector</TD>
+		<TD ALIGN="LEFT">packCString/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">packCStringLen/vector</TD>
+		<TD ALIGN="LEFT">packCStringLen/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">useAsCString/vector</TD>
+		<TD ALIGN="LEFT">useAsCString/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">useAsCStringLen/vector</TD>
+		<TD ALIGN="LEFT">useAsCStringLen/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">readFile/strict/vector</TD>
+		<TD ALIGN="LEFT">readFile/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="-9" SDNUM="1033;">-9</TD>
+		<TD ALIGN="RIGHT" SDVAL="-9" SDNUM="1033;">-9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">readFile/lazy/vector</TD>
+		<TD ALIGN="LEFT">readFile/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">writeFile/strict/vector</TD>
+		<TD ALIGN="LEFT">writeFile/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" SDVAL="6" SDNUM="1033;">6</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">writeFile/lazy/vector</TD>
+		<TD ALIGN="LEFT">writeFile/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">hGetContents/strict/vector</TD>
+		<TD ALIGN="LEFT">hGetContents/strict/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">hGetContents/lazy/vector</TD>
+		<TD ALIGN="LEFT">hGetContents/lazy/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="7" SDNUM="1033;">7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">create/vector</TD>
+		<TD ALIGN="LEFT">create/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-7" SDNUM="1033;">-7</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">createAndTrim/vector</TD>
+		<TD ALIGN="LEFT">createAndTrim/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-22" SDNUM="1033;">-22</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="3" SDNUM="1033;">3</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="25" SDNUM="1033;">25</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unsafeHead/vector</TD>
+		<TD ALIGN="LEFT">unsafeHead/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="67" SDNUM="1033;">67</TD>
+		<TD ALIGN="RIGHT" SDVAL="66" SDNUM="1033;">66</TD>
+		<TD ALIGN="RIGHT" SDVAL="-1" SDNUM="1033;">-1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unsafeTail/vector</TD>
+		<TD ALIGN="LEFT">unsafeTail/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="63" SDNUM="1033;">63</TD>
+		<TD ALIGN="RIGHT" SDVAL="66" SDNUM="1033;">66</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unsafeIndex/vector</TD>
+		<TD ALIGN="LEFT">unsafeIndex/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="62" SDNUM="1033;">62</TD>
+		<TD ALIGN="RIGHT" SDVAL="62" SDNUM="1033;">62</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unsafeTake/vector</TD>
+		<TD ALIGN="LEFT">unsafeTake/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="44" SDNUM="1033;">44</TD>
+		<TD ALIGN="RIGHT" SDVAL="40" SDNUM="1033;">40</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">unsafeDrop/vector</TD>
+		<TD ALIGN="LEFT">unsafeDrop/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="59" SDNUM="1033;">59</TD>
+		<TD ALIGN="RIGHT" SDVAL="62" SDNUM="1033;">62</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/map-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/map-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-6" SDNUM="1033;">-6</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="4" SDNUM="1033;">4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/filter-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/filter-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-35" SDNUM="1033;">-35</TD>
+		<TD ALIGN="RIGHT" SDVAL="-38" SDNUM="1033;">-38</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/filter-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/filter-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-53" SDNUM="1033;">-53</TD>
+		<TD ALIGN="RIGHT" SDVAL="-50" SDNUM="1033;">-50</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/map-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/map-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-34" SDNUM="1033;">-34</TD>
+		<TD ALIGN="RIGHT" SDVAL="-39" SDNUM="1033;">-39</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/map-noacc/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/map-noacc/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-94" SDNUM="1033;">-94</TD>
+		<TD ALIGN="RIGHT" SDVAL="-85" SDNUM="1033;">-85</TD>
+		<TD ALIGN="RIGHT" SDVAL="9" SDNUM="1033;">9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/noacc-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/noacc-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-75" SDNUM="1033;">-75</TD>
+		<TD ALIGN="RIGHT" SDVAL="-70" SDNUM="1033;">-70</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/filter-noacc/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/filter-noacc/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-52" SDNUM="1033;">-52</TD>
+		<TD ALIGN="RIGHT" SDVAL="-51" SDNUM="1033;">-51</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/noacc-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/noacc-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-83" SDNUM="1033;">-83</TD>
+		<TD ALIGN="RIGHT" SDVAL="-85" SDNUM="1033;">-85</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/non_directional/noacc-noacc/vector</TD>
+		<TD ALIGN="LEFT">fusion/non_directional/noacc-noacc/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-145" SDNUM="1033;">-145</TD>
+		<TD ALIGN="RIGHT" SDVAL="-140" SDNUM="1033;">-140</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/up-up/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/up-up/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="40" SDNUM="1033;">40</TD>
+		<TD ALIGN="RIGHT" SDVAL="42" SDNUM="1033;">42</TD>
+		<TD ALIGN="RIGHT" SDVAL="2" SDNUM="1033;">2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/map-up/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/map-up/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-173" SDNUM="1033;">-173</TD>
+		<TD ALIGN="RIGHT" SDVAL="-158" SDNUM="1033;">-158</TD>
+		<TD ALIGN="RIGHT" SDVAL="15" SDNUM="1033;">15</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/up-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/up-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-35" SDNUM="1033;">-35</TD>
+		<TD ALIGN="RIGHT" SDVAL="-38" SDNUM="1033;">-38</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/filter-up/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/filter-up/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-55" SDNUM="1033;">-55</TD>
+		<TD ALIGN="RIGHT" SDVAL="-59" SDNUM="1033;">-59</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/up-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/up-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-66" SDNUM="1033;">-66</TD>
+		<TD ALIGN="RIGHT" SDVAL="-69" SDNUM="1033;">-69</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/noacc-up/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/noacc-up/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-97" SDNUM="1033;">-97</TD>
+		<TD ALIGN="RIGHT" SDVAL="-94" SDNUM="1033;">-94</TD>
+		<TD ALIGN="RIGHT" SDVAL="3" SDNUM="1033;">3</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/up_loops/up-noacc/vector</TD>
+		<TD ALIGN="LEFT">fusion/up_loops/up-noacc/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-76" SDNUM="1033;">-76</TD>
+		<TD ALIGN="RIGHT" SDVAL="-85" SDNUM="1033;">-85</TD>
+		<TD ALIGN="RIGHT" SDVAL="-9" SDNUM="1033;">-9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/down-down/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/down-down/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="80" SDNUM="1033;">80</TD>
+		<TD ALIGN="RIGHT" SDVAL="80" SDNUM="1033;">80</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/map-down/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/map-down/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="76" SDNUM="1033;">76</TD>
+		<TD ALIGN="RIGHT" SDVAL="76" SDNUM="1033;">76</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/down-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/down-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="53" SDNUM="1033;">53</TD>
+		<TD ALIGN="RIGHT" SDVAL="51" SDNUM="1033;">51</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/filter-down/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/filter-down/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="84" SDNUM="1033;">84</TD>
+		<TD ALIGN="RIGHT" SDVAL="84" SDNUM="1033;">84</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/down-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/down-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="39" SDNUM="1033;">39</TD>
+		<TD ALIGN="RIGHT" SDVAL="27" SDNUM="1033;">27</TD>
+		<TD ALIGN="RIGHT" SDVAL="-12" SDNUM="1033;">-12</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/noacc-down/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/noacc-down/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="76" SDNUM="1033;">76</TD>
+		<TD ALIGN="RIGHT" SDVAL="77" SDNUM="1033;">77</TD>
+		<TD ALIGN="RIGHT" SDVAL="1" SDNUM="1033;">1</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/down_loops/down-noacc/vector</TD>
+		<TD ALIGN="LEFT">fusion/down_loops/down-noacc/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="20" SDNUM="1033;">20</TD>
+		<TD ALIGN="RIGHT" SDVAL="15" SDNUM="1033;">15</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/misc/length-loop/vector</TD>
+		<TD ALIGN="LEFT">fusion/misc/length-loop/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="0" SDNUM="1033;">0</TD>
+		<TD ALIGN="RIGHT" SDVAL="5" SDNUM="1033;">5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/misc/maximum-loop/vector</TD>
+		<TD ALIGN="LEFT">fusion/misc/maximum-loop/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-73" SDNUM="1033;">-73</TD>
+		<TD ALIGN="RIGHT" SDVAL="-77" SDNUM="1033;">-77</TD>
+		<TD ALIGN="RIGHT" SDVAL="-4" SDNUM="1033;">-4</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/misc/minimum-loop/vector</TD>
+		<TD ALIGN="LEFT">fusion/misc/minimum-loop/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-107" SDNUM="1033;">-107</TD>
+		<TD ALIGN="RIGHT" SDVAL="-91" SDNUM="1033;">-91</TD>
+		<TD ALIGN="RIGHT" SDVAL="16" SDNUM="1033;">16</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/big/big_map-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/big/big_map-map/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-49" SDNUM="1033;">-49</TD>
+		<TD ALIGN="RIGHT" SDVAL="-54" SDNUM="1033;">-54</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/big/big_filter-filter/vector</TD>
+		<TD ALIGN="LEFT">fusion/big/big_filter-filter/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-75" SDNUM="1033;">-75</TD>
+		<TD ALIGN="RIGHT" SDVAL="-84" SDNUM="1033;">-84</TD>
+		<TD ALIGN="RIGHT" SDVAL="-9" SDNUM="1033;">-9</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">fusion/big/big_filter-map/vector</TD>
+		<TD ALIGN="LEFT">fusion/big/big_filter-map/bytestring</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-198" SDNUM="1033;">-198</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="-172" SDNUM="1033;">-172</TD>
+		<TD ALIGN="RIGHT" BGCOLOR="#EB613D" SDVAL="26" SDNUM="1033;">26</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT">real_world/letter_freq/vector</TD>
+		<TD ALIGN="LEFT">real_world/letter_freq/bytestring</TD>
+		<TD ALIGN="RIGHT" SDVAL="-2" SDNUM="1033;">-2</TD>
+		<TD ALIGN="RIGHT" SDVAL="-5" SDNUM="1033;">-5</TD>
+		<TD ALIGN="RIGHT" SDVAL="-3" SDNUM="1033;">-3</TD>
+	</TR>
+</TABLE>
+<!-- ************************************************************************** -->
+</BODY>
+
+</HTML>
